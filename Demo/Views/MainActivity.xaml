@@ -3,11 +3,12 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:a="https://github.com/jack0126/Droid"
              xmlns:local="clr-namespace:Demo.Views"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid>
         <TextBlock x:Name="Message" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-        <Button x:Name="Go" Width="120" Height="60" Content="Go" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,0,0,100"/>
+        <Button Width="120" Height="60" Content="Go" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,0,0,100" Command="{a:Action OnGo}"/>
     </Grid>
 </UserControl>

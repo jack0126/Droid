@@ -10,19 +10,12 @@ namespace Demo.Activitys
 {
     class TestActivity : Activity
     {
-        private Button btnBack;
         public override UserControl OnCreateView()
         {
             return new Views.TestActivity();
         }
-
-        public override void OnViewCreated()
-        {
-            btnBack = FindViewByName<Button>("Back");
-            btnBack.Click += BtnBack_Click;
-        }
-
-        private void BtnBack_Click(object sender, System.Windows.RoutedEventArgs e)
+        
+        private void OnBack()
         {
             Finish();
         }

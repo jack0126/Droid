@@ -11,7 +11,6 @@ namespace Demo.Activitys
     class MainActivity : Activity
     {
         private TextBlock MessageBlock;
-        private Button btnGo;
         public override UserControl OnCreateView()
         {
             return new Views.MainActivity();
@@ -20,13 +19,10 @@ namespace Demo.Activitys
         public override void OnViewCreated()
         {
             MessageBlock = FindViewByName<TextBlock>("Message");
-            btnGo = FindViewByName<Button>("Go");
-
             MessageBlock.Text = "Hello, welcome to my world!";
-            btnGo.Click += BtnGo_Click;
         }
 
-        private void BtnGo_Click(object sender, System.Windows.RoutedEventArgs e)
+        private void OnGo()
         {
             StartActivity<TestActivity>();
         }
