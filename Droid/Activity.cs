@@ -61,7 +61,12 @@ namespace Jack.Mvvm.Droid
                 activity.DoCreate();
             }
         }
-        public void StartActivity<A>(Dictionary<string, object> options = null, string name = null)
+        public void StartActivity<A>(string name = null)
+            where A : Activity, new()
+        {
+            StartActivity<A>(null, name);
+        }
+        public void StartActivity<A>(Dictionary<string, object> options, string name = null)
             where A : Activity, new()
         {
             StartActivity<A>(this, options, name);
