@@ -3,7 +3,7 @@ Jack.Droid  for C#
 # WPF桌面应访安卓（Activity）开发模式框架，主要适用于自助机类应用开发
 # Demo
 
-<Window x:Class="Sany.Scrap.MainWindow"
+<Window x:Class="Demo.MainWindow"
         
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         
@@ -15,13 +15,11 @@ Jack.Droid  for C#
         
         xmlns:a="https://github.com/jack0126/Droid"
         
-        xmlns:local="clr-namespace:Sany.Scrap"
+        xmlns:local="clr-namespace:Demo"
         
-        xmlns:activity="clr-namespace:Sany.Scrap.Activitys"
+        xmlns:activity="clr-namespace:Demo.Activitys"
         
         mc:Ignorable="d"
-        
-        Icon="/Sany.Scrap;component/Res/ic_company_logo.png"
         
         WindowStartupLocation="CenterScreen"
         
@@ -32,7 +30,7 @@ Jack.Droid  for C#
 </Window>
 
 
-namespace Sany.Scrap.Activitys
+namespace Demo.Activitys
 
 {
 
