@@ -26,7 +26,7 @@ Jack.Droid.WPF  for C#
         Title="" Height="720" Width="1024">
         
     <a:ActivityViewGroup Launcher="{x:Type activity:MainActivity}"/>
-        
+    
 </Window>
 
 
