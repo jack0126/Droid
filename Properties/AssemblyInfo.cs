@@ -36,4 +36,4 @@ using System.Windows.Markup;
 [assembly: AssemblyVersion("1.0.0.0")]
 [assembly: AssemblyFileVersion("1.0.0.0")]
 
-[assembly: XmlnsDefinition("", "Jack.Mvvm.Droid")]
+[assembly: XmlnsDefinition("https://github.com/jack0126/Droid", "Jack.Mvvm.Droid")]
