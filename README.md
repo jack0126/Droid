@@ -34,7 +34,7 @@ namespace Sany.Scrap.Activitys
     
         public override UserControl OnCreateView()
         {
-            return new Views.MainActivity();
+            return new Views.MainActivity();//Views.MainActivity.xaml
         }
 
         public override void OnViewCreated()
