@@ -41,7 +41,7 @@ namespace Jack.Mvvm.Droid
         /// <param name="context">活动页面的上下文对象</param>
         /// <param name="name">活动页面的名字</param>
         /// <param name="options">活动页面的启动参数</param>
-        public static void StartActivity<A>(Activity context, string name, Dictionary<string, object> options = null)
+        public static void StartActivity<A>(Activity context, Dictionary<string, object> options = null, string name = null)
             where A : Activity, new()
         {
             if (ActivityViewGroup != null)
@@ -61,10 +61,10 @@ namespace Jack.Mvvm.Droid
                 activity.DoCreate();
             }
         }
-        public static void StartActivity<A>(Activity context, Dictionary<string, object> options = null)
+        public void StartActivity<A>(Dictionary<string, object> options = null, string name = null)
             where A : Activity, new()
         {
-            StartActivity<A>(context, null, options);
+            StartActivity<A>(this, options, name);
         }
         internal static void Launcher(Type launchActivity)
         {
