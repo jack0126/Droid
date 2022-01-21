@@ -35,6 +35,7 @@ Jack.Droid  for C#
 namespace Sany.Scrap.Activitys
 
 {
+
     using System;
 
     using System.Collections.Generic;
