@@ -23,7 +23,7 @@ Jack.Droid.WPF  for C#
         
         WindowStartupLocation="CenterScreen"
         
-        Title="" Height="720" Width="1024">
+        Title="Demo" Height="720" Width="1024">
         
     <a:ActivityViewGroup Launcher="{x:Type activity:MainActivity}"/>
     
